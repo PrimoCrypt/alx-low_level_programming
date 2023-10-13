@@ -1,15 +1,13 @@
 #include "variadic_functions.h"
 
 /**
- * print_numbers - Function that orints numbers followed by a new line
- * @separator: String to be printed between numbers
- * @n: Number of integers to be passed to the function
- * @...: Remaining args
- *
- * Return: 0
+ * print_numbers - prints numbers followed by a new line
+ * @n: number of parameter
+ * @separator: separator between two numbers
+ * Return: Always 0
  */
 
-void print_numbers(const char *separator, const unsigned int n, ...)	
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
 	va_list ap;
