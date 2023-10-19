@@ -5,16 +5,16 @@
 
 /**
  * print_list - check the code for Holberton School students.
- * @leo_list: The name of the list
+ * @h: name of the list
  *
  * Return: the number of nodes.
  */
 
-size_t print_list(const list_t *leo_list)
+size_t print_list(const list_t *h)
 {
 	int count = 0;
 
-	while (leo_list)
+	while (h)
 	{
 		if (h->str == NULL)
 		{
@@ -22,10 +22,10 @@ size_t print_list(const list_t *leo_list)
 		}
 		else
 		{
-			printf("[%d] %s\n", leo_list->len, leo_list->str);
+			printf("[%d] %s\n", h->len, h->str);
 		}
-		count++;
-		leo_list = leo_list->next;
+		count = count + 1;
+		h = h->next;
 	}
 	return (count);
 }
